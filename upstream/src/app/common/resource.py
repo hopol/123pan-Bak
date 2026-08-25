@@ -1,0 +1,697 @@
+# Resource object code (Python 3)
+# Created by: object code
+# Created by: The Resource Compiler for Qt version 6.11.2
+# WARNING! All changes made in this file will be lost!
+
+from PySide6 import QtCore
+
+qt_resource_data = b"\
+\x00\x00\x03\x98\
+\x00\
+\x00\x01\x00\x01\x00  \x00\x00\x00\x00 \x00\x82\x03\x00\
+\x00\x16\x00\x00\x00\x89PNG\x0d\x0a\x1a\x0a\x00\x00\x00\
+\x0dIHDR\x00\x00\x00 \x00\x00\x00 \x08\x06\x00\
+\x00\x00szz\xf4\x00\x00\x00\x04gAMA\x00\x00\
+\xb1\x8f\x0b\xfca\x05\x00\x00\x00\x01sRGB\x00\xae\
+\xce\x1c\xe9\x00\x00\x00 cHRM\x00\x00z&\x00\
+\x00\x80\x84\x00\x00\xfa\x00\x00\x00\x80\xe8\x00\x00u0\x00\
+\x00\xea`\x00\x00:\x98\x00\x00\x17p\x9c\xbaQ<\x00\
+\x00\x03\x00IDATX\x85\xc5\x97\xdfKSa\x1c\
+\xc6?\xef\x9c;;jI\x83\x09)\x18^5\x1aA\
+J\xd0E\xf9\x07\x84\x10\x149IS*\xe8\x220\xa1\
+\xbb\x82\xac\xac\xe8\x22\x820\x22\xf3\xaa\xdf\x99\x22I\xf4\
+'(A #\xc8\xe5\xa9\x8b\xceh\x0c\x0a\xc1\xa0\x8b\
+\xed\xb8\xed\xect\xe1\xceqg\xe7\xb8\x19\xe4\xf6\xc0\xcb\
+\xde\xf3~\xcfy\x9f\xe7<\xef\xf7\xfb\xbeg\x82\x22t\
+uu\x19T\x01\xd1hT\x98}a\x12\xaf\xae\xaeV\
+\x83\x1b\x80@ `\x89\xf0\x00T\x93\xdc\xe43\xdd\xf6\
+T\xcbv7\x11@\xbb\xa7\x16\xe4E\xe8\xae\xb5\x00O\
+\xad\x05\xe0u\x1b\x0cM\xbf\x00C\x80\x01\x18\x02\xa5\x7f\
+`#\xf6\xfc5\xe4\x05\xe4)\xb4\xf5~\xec|/\xe1\
+\x89\xd9\xf51\xbd\xb4\x09\x94\xd1\xc8\xd6\x05,GN\xa3\
+i\x1a\x9dso\xd7E\x14a\xa9?B6\x9b\xb5\x8d\
+u>yGxb\x16e\xb8\x8ft:m\x8f\xdd{\
+\x0f9\x90\xc3GH\xc7\x16\x1c\x5c\xaeK \x84@\x96\
+\xe5\x02\xb9\xb0\xc5\xbc^/\xb2,\xdb\x9a\xe5\x088b\
+\xcah\x04t\xd8sl\xc4\xd5\x81\x0a9 \x1c\x0e\x94\
+\x22\xf4pz\xc3\xf6\xcd\xa0o\x1ew]\x02\x0b\x06\xd6\
+\x9b\xd9H\x1f\xbf\xb1\xad?:(\x97\xfa\x00\xd8{{\
+\x0aa\xd4A\x0e[\x1e,\xdd9\x81\xd7\xeb\xa4+/\
+\xc0$\xd9\x84|\xf1L\x0fMMM\xb6\xf8\xd7\xab\xa7\
+\x08]\x9f\xb1'a\x0e\x0c\xc3\xdd\xca\x0a\x02\x84\xd3\x81\
+\x02\xb92\xdc\xe7 7\xa1\x8c\xd93>tq\x86\xfd\
+#s(\x13\xceJ(\x9f\x03f\xa9\x15\xb0\xe3\xe0a\
+\xc8\x0bb\x17N\x96}\xcc\x81\x1c\x90\x13\xae!\xf7}\
+\xe0\xe9\x94\xad\xceM\xdbS_\x97!\x0f\xe1\x07\xb3\x8e\
+:G\x07\xe5F\x84\xd0\x95\x19\xcbv\xabe\x05\xd1\xf1\
+\x1e\x1a\x1a\x1a\x1c\x5c\xee\x0e\x94l2f\xff\xc7\xf8\x98\
+\xeb&c\x12\xb5\x0f\xdet%_\xbc\x7f\xd4\x95\x1c@\
+T\xfb[\xa0\x18\xf1x|\xa8\xe6g\xc1\xb6\x08PU\
+\xf5\xff\x09PU\xb5\xd0\xbe\xdb\xc6\x96_^\xb3\x91-\
+\x0c\xeed\xf1l\xb3u\xad\xaa*_\x9e]\xae(\xa0\
+\xfc>P@0\x18dee\x85L&C2\x99$\
+\x18\x0c\xf23\xf6\x81T*EGG\x87E\xda\xda\xda\
+\x8a\x98l#\x99L\xd2\xd2\xd2\x82\x10b\xd3\xe43\xb1\
+\xa5%0'\xc9\xe5r\x00|\x1bi\xe3\xcfd/\xca\
+\xf0n\xeb\x1e\xed\xe3+$I\xc2\xe7\xf3\x01 IR\
+E\xf2-\x0bp<\x14hg\xd7\xe8'\xf6=\xfa\xc5\
+\xe7\xbb\xc7\xf9}\xeb\x00\xfeC\x03\xe8\xfa\xc6\x89\x93H\
+$\x88\x9ek\xae8W\xc52\x5c[[\xc3\xe7\xf3a\
+\x18\x06\x99L\x06\xbf\xdf\x8f\xa6i\xe8\xbaNcc#\
+\x9a\xa6QWWG}}=\xa9T\xcaz\xebt:\
+\x8da\x18e]\x88\xc7\xe3C\x15s@\x92\xa4u\xa5\
+B\xe0\xf7\xfb\x01\xac\xdf\xd2~1\x99,\xcb\x95\xa6\x06\
+\xb6\xa9\x0c\xff\x05\xb5\x16\xa0\xd7L@ \x10\x00\x98\xf7\
+D\xa3QQ\xb8\xa8\x05\x12\xd6!]\xadC\xc9|Y\
+\xf3\xcfi\xe9WB;\xd0\xcd\xf6\xe5\x86\x0e\xcc\x03\x09\
+s\xe0/\xa8\xe3<\xd8\x7fD\xc6y\x00\x00\x00\x00I\
+END\xaeB`\x82\
+\x00\x00\x020\
+L\
+inkCard {\x0a    bo\
+rder: 1px solid \
+rgb(234, 234, 23\
+4);\x0a    border-r\
+adius: 10px;\x0a   \
+ background-colo\
+r: rgba(249, 249\
+, 249, 0.95);\x0a}\x0a\
+\x0aLinkCard:hover \
+{\x0a    background\
+-color: rgba(249\
+, 249, 249, 0.93\
+);\x0a    border: 1\
+px solid rgb(220\
+, 220, 220);\x0a}\x0a\x0a\
+#titleLabel {\x0a  \
+  font: 18px 'Se\
+goe UI', 'Micros\
+oft YaHei', 'Pin\
+gFang SC';\x0a    c\
+olor: black;\x0a}\x0a\x0a\
+#contentLabel {\x0a\
+    font: 12px '\
+Segoe UI', 'Micr\
+osoft YaHei', 'P\
+ingFang SC';\x0a   \
+ color: rgb(93, \
+93, 93);\x0a}\x0a\x0aLink\
+CardView {\x0a    b\
+ackground-color:\
+ transparent;\x0a  \
+  border: none;\x0a\
+}\x0a\x0a#view {\x0a    b\
+ackground-color:\
+ transparent;\x0a}\
+\x00\x00\x00\xc9\
+S\
+ettingInterface,\
+ #scrollWidget {\
+\x0a    background-\
+color: transpare\
+nt;\x0a}\x0a\x0aQScrollAr\
+ea {\x0a    border:\
+ none;\x0a    backg\
+round-color: tra\
+nsparent;\x0a}\x0a\x0a\x0a/*\
+ \xe6\xa0\x87\xe7\xad\xbe */\x0aQLabe\
+l#settingLabel {\
+\x0a    font: 20pt \
+bold;\x0a}\x0a\
+\x00\x00\x01K\
+P\
+ivotInterface QL\
+abel,\x0aTabInterfa\
+ce QLabel {\x0a    \
+padding-left: 10\
+px;\x0a    font: 14\
+px 'Segoe UI', '\
+Microsoft YaHei'\
+, 'PingFang SC';\
+\x0a    color: blac\
+k;\x0a}\x0a\x0a#controlPa\
+nel BodyLabel {\x0a\
+    padding-left\
+: 0px;\x0a}\x0a\x0a#contr\
+olPanel {\x0a    ba\
+ckground-color: \
+white;\x0a    borde\
+r-left: 1px soli\
+d rgb(229, 229, \
+229);\x0a    border\
+-top-right-radiu\
+s: 10px;\x0a}\
+\x00\x00\x00\xb1\
+C\
+loudInterface, T\
+rashInterface, S\
+hareInterface, #\
+scrollWidget {\x0a \
+   background-co\
+lor: transparent\
+;\x0a}\x0a\x0a#frame {\x0a  \
+  border: 1px so\
+lid rgba(0, 0, 0\
+, 15);\x0a    borde\
+r-radius: 5px;\x0a}\
+\
+\x00\x00\x04)\
+I\
+conCard {\x0a    ba\
+ckground-color: \
+rgb(251, 251, 25\
+1);\x0a    border: \
+1px solid rgb(22\
+9, 229, 229);\x0a  \
+  border-radius:\
+ 6px;\x0a}\x0a\x0aIconCar\
+d > QLabel {\x0a   \
+ color: rgb(96, \
+96, 96);\x0a    fon\
+t: 11px 'Segoe U\
+I', 'PingFang SC\
+';\x0a}\x0a\x0aIconCard[i\
+sSelected=true] \
+{\x0a    background\
+-color: --ThemeC\
+olorPrimary;\x0a}\x0a\x0a\
+IconCard[isSelec\
+ted=true] > QLab\
+el {\x0a    color: \
+white;\x0a}\x0a\x0a#scrol\
+lWidget, #iconVi\
+ew {\x0a    backgro\
+und-color: rgb(2\
+43, 243, 243);\x0a}\
+\x0a\x0aIconCardView {\
+\x0a    background-\
+color: transpare\
+nt;\x0a}\x0a\x0a#iconView\
+ {\x0a    border: 1\
+px solid rgb(234\
+, 234, 234);\x0a   \
+ border-radius: \
+10px;\x0a}\x0a\x0a\x0aIconIn\
+foPanel {\x0a    ba\
+ckground-color: \
+rgb(251, 251, 25\
+1);\x0a    border-l\
+eft: 1px solid r\
+gb(229, 229, 229\
+);\x0a    border-to\
+p-right-radius: \
+10px;\x0a    border\
+-bottom-right-ra\
+dius: 10px;\x0a}\x0a\x0a\x0a\
+IconInfoPanel > \
+#nameLabel {\x0a   \
+ font: 15px 'Seg\
+oe UI', 'PingFan\
+g SC';\x0a    font-\
+weight: bold;\x0a  \
+  color: black;\x0a\
+}\x0a\x0aIconInfoPanel\
+ > #subTitleLabe\
+l {\x0a    font: 14\
+px 'Segoe UI', '\
+Microsoft YaHei'\
+, 'PingFang SC';\
+\x0a    color: blac\
+k;\x0a}\x0a\x0aIconInfoPa\
+nel > QLabel {\x0a \
+   font: 12px 'S\
+egoe UI', 'PingF\
+ang SC';\x0a    col\
+or: rgb(96, 96, \
+96);\x0a}\x0a\x0a\
+\x00\x00\x01Q\
+#\
+titleLabel {\x0a   \
+ color: black;\x0a \
+   font: 14px 'S\
+egoe UI', 'Micro\
+soft YaHei', 'Pi\
+ngFang SC';\x0a    \
+font-weight: bol\
+d;\x0a}\x0a\x0a#contentLa\
+bel {\x0a    color:\
+ rgb(118, 118, 1\
+18);\x0a    font: 1\
+2px 'Segoe UI', \
+'Microsoft YaHei\
+', 'PingFang SC'\
+;\x0a}\x0a\x0a#viewTitleL\
+abel {\x0a    color\
+: black;\x0a    fon\
+t: 20px \x22Segoe U\
+I SemiBold\x22, \x22Mi\
+crosoft YaHei\x22, \
+'PingFang SC';\x0a}\
+\
+\x00\x00\x017\
+S\
+ettingInterface,\
+\x0a#view {\x0a    bac\
+kground-color: t\
+ransparent;\x0a}\x0a\x0aQ\
+ScrollArea {\x0a   \
+ border: none;\x0a \
+   background-co\
+lor: transparent\
+;\x0a}\x0a\x0a\x0aBannerWidg\
+et > #galleryLab\
+el {\x0a    font: 4\
+2px 'Segoe UI Se\
+miBold', 'Micros\
+oft YaHei SemiBo\
+ld';\x0a    backgro\
+und-color: trans\
+parent;\x0a    colo\
+r: black;\x0a    pa\
+dding-left: 28px\
+;\x0a}\x0a\x0a\x0a\
+\x00\x00\x03)\
+G\
+alleryInterface,\
+ ToolBar, #view \
+{\x0a    background\
+-color: transpar\
+ent;\x0a}\x0a\x0aQScrollA\
+rea {\x0a    border\
+: none;\x0a}\x0a\x0aToolB\
+ar > StrongBodyL\
+abel {\x0a    color\
+: black;\x0a}\x0a\x0aTool\
+Bar > CaptionLab\
+el {\x0a    color: \
+rgb(95, 95, 95);\
+\x0a}\x0a\x0aExampleCard \
+{\x0a    background\
+-color: transpar\
+ent;\x0a}\x0a\x0aTitleLab\
+el,\x0aStrongBodyLa\
+bel {\x0a    color:\
+ black;\x0a}\x0a\x0aExamp\
+leCard > #card {\
+\x0a    border: 1px\
+ solid rgba(0, 0\
+, 0, 0.05);\x0a    \
+border-radius: 1\
+0px;\x0a    backgro\
+und-color: rgba(\
+0, 0, 0, 0.024);\
+\x0a}\x0a\x0aExampleCard \
+> #card QLabel {\
+\x0a    font: 14px \
+'Segoe UI', 'Mic\
+rosoft YaHei', '\
+PingFang SC';\x0a  \
+  color: black;\x0a\
+}\x0a\x0aExampleCard> \
+#card InfoBadge \
+{\x0a    font-size:\
+ 11px;\x0a}\x0a\x0a#sourc\
+eWidget {\x0a    ba\
+ckground-color: \
+rgba(255, 255, 2\
+55, 0.667);\x0a    \
+border-top: 1px \
+solid rgba(0, 0,\
+ 0, 0.05);\x0a    b\
+order-bottom-lef\
+t-radius: 10px;\x0a\
+    border-botto\
+m-right-radius: \
+10px;\x0a}\x0a\
+\x00\x00\x02'\
+L\
+inkCard {\x0a    bo\
+rder: 1px solid \
+rgb(46, 46, 46);\
+\x0a    border-radi\
+us: 10px;\x0a    ba\
+ckground-color: \
+rgba(39, 39, 39,\
+ 0.95);\x0a}\x0a\x0aLinkC\
+ard:hover {\x0a    \
+background-color\
+: rgba(39, 39, 3\
+9, 0.93);\x0a    bo\
+rder: 1px solid \
+rgb(66, 66, 66);\
+\x0a}\x0a\x0a#titleLabel \
+{\x0a    font: 18px\
+ 'Segoe UI', 'Mi\
+crosoft YaHei', \
+'PingFang SC';\x0a \
+   color: white;\
+\x0a}\x0a\x0a#contentLabe\
+l {\x0a    font: 12\
+px 'Segoe UI', '\
+Microsoft YaHei'\
+, 'PingFang SC';\
+\x0a    color: rgb(\
+208, 208, 208);\x0a\
+}\x0a\x0aLinkCardView \
+{\x0a    background\
+-color: transpar\
+ent;\x0a    border:\
+ none;\x0a}\x0a\x0a#view \
+{\x0a    background\
+-color: transpar\
+ent;\x0a}\
+\x00\x00\x00\xdc\
+S\
+ettingInterface,\
+ #scrollWidget {\
+\x0a    background-\
+color: transpare\
+nt;\x0a}\x0a\x0aQScrollAr\
+ea {\x0a    border:\
+ none;\x0a    backg\
+round-color: tra\
+nsparent;\x0a}\x0a\x0a\x0a/*\
+ \xe6\xa0\x87\xe7\xad\xbe */\x0aQLabe\
+l#settingLabel {\
+\x0a    font: 20pt \
+bold;\x0a    color:\
+ white;\x0a}\x0a\x0a\
+\x00\x00\x01R\
+P\
+ivotInterface QL\
+abel,\x0aTabInterfa\
+ce QLabel {\x0a    \
+padding-left: 10\
+px;\x0a    font: 14\
+px 'Segoe UI', '\
+Microsoft YaHei'\
+, 'PingFang SC';\
+\x0a    color: whit\
+e;\x0a}\x0a\x0a#controlPa\
+nel BodyLabel {\x0a\
+    padding-left\
+: 0px;\x0a}\x0a\x0a#contr\
+olPanel {\x0a    ba\
+ckground-color: \
+rgb(43, 43, 43);\
+\x0a    border-left\
+: 1px solid rgb(\
+50, 50, 50);\x0a   \
+ border-top-righ\
+t-radius: 10px;\x0a\
+}\
+\x00\x00\x00\xb7\
+C\
+loudInterface, T\
+rashInterface, S\
+hareInterface, #\
+scrollWidget {\x0a \
+   background-co\
+lor: transparent\
+;\x0a}\x0a\x0a#frame {\x0a  \
+  border: 1px so\
+lid rgba(255, 25\
+5, 255, 13);\x0a   \
+ border-radius: \
+5px;\x0a}\
+\x00\x00\x04\x15\
+I\
+conCard {\x0a    ba\
+ckground-color: \
+rgb(43, 43, 43);\
+\x0a    border: 1px\
+ solid rgb(29, 2\
+9, 29);\x0a    bord\
+er-radius: 6px;\x0a\
+}\x0a\x0aIconCard > QL\
+abel {\x0a    color\
+: rgb(207, 207, \
+207);\x0a    font: \
+11px 'Segoe UI',\
+ 'PingFang SC';\x0a\
+}\x0a\x0aIconCard[isSe\
+lected=true] {\x0a \
+   background-co\
+lor: --ThemeColo\
+rPrimary;\x0a}\x0a\x0aIco\
+nCard[isSelected\
+=true] > QLabel \
+{\x0a    color: bla\
+ck;\x0a}\x0a\x0a#scrollWi\
+dget, #iconView \
+{\x0a    background\
+-color: rgb(32, \
+32, 32);\x0a}\x0a\x0aIcon\
+CardView {\x0a    b\
+ackground-color:\
+ transparent;\x0a}\x0a\
+\x0a#iconView {\x0a   \
+ border: 1px sol\
+id rgb(36, 36, 3\
+6);\x0a    border-r\
+adius: 10px;\x0a}\x0a\x0a\
+IconInfoPanel {\x0a\
+    background-c\
+olor: rgb(43, 43\
+, 43);\x0a    borde\
+r-left: 1px soli\
+d rgb(29, 29, 29\
+);\x0a    border-to\
+p-right-radius: \
+10px;\x0a    border\
+-bottom-right-ra\
+dius: 10px;\x0a}\x0a\x0aI\
+conInfoPanel>#na\
+meLabel {\x0a    fo\
+nt: 15px 'Segoe \
+UI', 'PingFang S\
+C';\x0a    font-wei\
+ght: bold;\x0a    c\
+olor: white;\x0a}\x0a\x0a\
+IconInfoPanel>#s\
+ubTitleLabel {\x0a \
+   font: 14px 'S\
+egoe UI', 'Micro\
+soft YaHei', 'Pi\
+ngFang SC';\x0a    \
+color: white;\x0a}\x0a\
+\x0aIconInfoPanel>Q\
+Label {\x0a    font\
+: 12px 'Segoe UI\
+', 'PingFang SC'\
+;\x0a    color: rgb\
+(207, 207, 207);\
+\x0a}\x0a\x0a\
+\x00\x00\x01Q\
+#\
+titleLabel {\x0a   \
+ color: white;\x0a \
+   font: 14px 'S\
+egoe UI', 'Micro\
+soft YaHei', 'Pi\
+ngFang SC';\x0a    \
+font-weight: bol\
+d;\x0a}\x0a\x0a#contentLa\
+bel {\x0a    color:\
+ rgb(208, 208, 2\
+08);\x0a    font: 1\
+2px 'Segoe UI', \
+'Microsoft YaHei\
+', 'PingFang SC'\
+;\x0a}\x0a\x0a#viewTitleL\
+abel {\x0a    color\
+: white;\x0a    fon\
+t: 20px \x22Segoe U\
+I SemiBold\x22, \x22Mi\
+crosoft YaHei\x22, \
+'PingFang SC';\x0a}\
+\
+\x00\x00\x015\
+S\
+ettingInterface,\
+\x0a#view {\x0a    bac\
+kground-color: t\
+ransparent;\x0a}\x0a\x0aQ\
+ScrollArea {\x0a   \
+ border: none;\x0a \
+   background-co\
+lor: transparent\
+;\x0a}\x0a\x0a\x0aBannerWidg\
+et > #galleryLab\
+el {\x0a    font: 4\
+2px 'Segoe UI Se\
+miBold', 'Micros\
+oft YaHei SemiBo\
+ld';\x0a    backgro\
+und-color: trans\
+parent;\x0a    colo\
+r: white;\x0a    pa\
+dding-left: 28px\
+;\x0a}\x0a\
+\x00\x00\x02\xf3\
+G\
+alleryInterface,\
+\x0aToolBar,\x0a#view \
+{\x0a    background\
+-color: transpar\
+ent;\x0a}\x0a\x0aQScrollA\
+rea {\x0a    border\
+: none;\x0a}\x0a\x0a\x0aTool\
+Bar>CaptionLabel\
+ {\x0a    color: wh\
+ite;\x0a}\x0a\x0aExampleC\
+ard {\x0a    backgr\
+ound-color: tran\
+sparent;\x0a    col\
+or: white;\x0a}\x0a\x0aTi\
+tleLabel,\x0aStrong\
+BodyLabel {\x0a    \
+color: white;\x0a}\x0a\
+\x0aExampleCard>#ca\
+rd {\x0a    border:\
+ 1px solid rgb(3\
+6, 36, 36);\x0a    \
+border-radius: 1\
+0px;\x0a    backgro\
+und-color: rgba(\
+0, 0, 0, 0.1795)\
+;\x0a}\x0a\x0aExampleCard\
+>#card QLabel {\x0a\
+    font: 14px '\
+Segoe UI', 'Micr\
+osoft YaHei', 'P\
+ingFang SC';\x0a   \
+ color: white;\x0a}\
+\x0a\x0aExampleCard>#c\
+ard InfoBadge {\x0a\
+    font-size: 1\
+1px;\x0a}\x0a\x0a\x0a#source\
+Widget {\x0a    bac\
+kground-color: r\
+gba(255, 255, 25\
+5, 0.09);\x0a    bo\
+rder-top: 1px so\
+lid rgb(36, 36, \
+36);\x0a    border-\
+bottom-left-radi\
+us: 10px;\x0a    bo\
+rder-bottom-righ\
+t-radius: 10px;\x0a\
+}\x0a\
+"
+
+qt_resource_name = b"\
+\x00\x06\
+\x03E\xa6~\
+\x001\
+\x002\x003\x00p\x00a\x00n\
+\x00\x03\
+\x00\x00x\xa3\
+\x00q\
+\x00s\x00s\
+\x00\x08\
+\x05\xe2A\xff\
+\x00l\
+\x00o\x00g\x00o\x00.\x00i\x00c\x00o\
+\x00\x04\
+\x00\x06\xa8\x8b\
+\x00d\
+\x00a\x00r\x00k\
+\x00\x05\
+\x00r\xfd\xf4\
+\x00l\
+\x00i\x00g\x00h\x00t\
+\x00\x0d\
+\x0e\x8drC\
+\x00l\
+\x00i\x00n\x00k\x00_\x00c\x00a\x00r\x00d\x00.\x00q\x00s\x00s\
+\x00\x15\
+\x01\xe32\x03\
+\x00s\
+\x00e\x00t\x00t\x00i\x00n\x00g\x00_\x00i\x00n\x00t\x00e\x00r\x00f\x00a\x00c\x00e\
+\x00.\x00q\x00s\x00s\
+\x00\x1d\
+\x07>\x03\x83\
+\x00n\
+\x00a\x00v\x00i\x00g\x00a\x00t\x00i\x00o\x00n\x00_\x00v\x00i\x00e\x00w\x00_\x00i\
+\x00n\x00t\x00e\x00r\x00f\x00a\x00c\x00e\x00.\x00q\x00s\x00s\
+\x00\x12\
+\x00\x1e\xfcc\
+\x00v\
+\x00i\x00e\x00w\x00_\x00i\x00n\x00t\x00e\x00r\x00f\x00a\x00c\x00e\x00.\x00q\x00s\
+\x00s\
+\x00\x12\
+\x0c\xccXc\
+\x00i\
+\x00c\x00o\x00n\x00_\x00i\x00n\x00t\x00e\x00r\x00f\x00a\x00c\x00e\x00.\x00q\x00s\
+\x00s\
+\x00\x0f\
+\x00c\xd5\x83\
+\x00s\
+\x00a\x00m\x00p\x00l\x00e\x00_\x00c\x00a\x00r\x00d\x00.\x00q\x00s\x00s\
+\x00\x12\
+\x0c\xfd$c\
+\x00h\
+\x00o\x00m\x00e\x00_\x00i\x00n\x00t\x00e\x00r\x00f\x00a\x00c\x00e\x00.\x00q\x00s\
+\x00s\
+\x00\x15\
+\x03\x94\xd8C\
+\x00g\
+\x00a\x00l\x00l\x00e\x00r\x00y\x00_\x00i\x00n\x00t\x00e\x00r\x00f\x00a\x00c\x00e\
+\x00.\x00q\x00s\x00s\
+"
+
+qt_resource_struct = b"\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\x02\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x12\x00\x02\x00\x00\x00\x02\x00\x00\x00\x04\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x1e\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+\x00\x00\x01\xa0\x1fLWa\
+\x00\x00\x004\x00\x02\x00\x00\x00\x08\x00\x00\x00\x0e\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00B\x00\x02\x00\x00\x00\x08\x00\x00\x00\x06\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\xe2\x00\x00\x00\x00\x00\x01\x00\x00\x07\xec\
+\x00\x00\x01\x9f\xf5\xc9{!\
+\x00\x00\x016\x00\x00\x00\x00\x00\x01\x00\x00\x0c\xce\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x00r\x00\x00\x00\x00\x00\x01\x00\x00\x05\xd0\
+\x00\x00\x01\x9f\xf5\xc9{!\
+\x00\x00\x01\x84\x00\x00\x00\x00\x00\x01\x00\x00\x0f^\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x00\xa2\x00\x00\x00\x00\x00\x01\x00\x00\x06\x9d\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x01\x0c\x00\x00\x00\x00\x00\x01\x00\x00\x08\xa1\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x01Z\x00\x00\x00\x00\x00\x01\x00\x00\x0e#\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x00R\x00\x00\x00\x00\x00\x01\x00\x00\x03\x9c\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x00\xe2\x00\x00\x00\x00\x00\x01\x00\x00\x16\xec\
+\x00\x00\x01\x9f\xf5\xc9{!\
+\x00\x00\x016\x00\x00\x00\x00\x00\x01\x00\x00\x1b\xc0\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x00r\x00\x00\x00\x00\x00\x01\x00\x00\x14\xb6\
+\x00\x00\x01\x9f\xf5\xc9{!\
+\x00\x00\x01\x84\x00\x00\x00\x00\x00\x01\x00\x00\x1eN\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x00\xa2\x00\x00\x00\x00\x00\x01\x00\x00\x15\x96\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x01\x0c\x00\x00\x00\x00\x00\x01\x00\x00\x17\xa7\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x01Z\x00\x00\x00\x00\x00\x01\x00\x00\x1d\x15\
+\x00\x00\x01\x9f\xd97<^\
+\x00\x00\x00R\x00\x00\x00\x00\x00\x01\x00\x00\x12\x8b\
+\x00\x00\x01\x9f\xd97<^\
+"
+
+def qInitResources():
+    QtCore.qRegisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+def qCleanupResources():
+    QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+qInitResources()

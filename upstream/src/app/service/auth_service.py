@@ -59,7 +59,7 @@ class AuthService:
             return result.code
         token_data = result.data
         self.authorization = token_data["authorization"]
-        logger.info("登录成功: user=%s, token=%.20s...", self.user_name, self.authorization)
+        logger.info("登录成功: user=%s, token已获取", self.user_name)
         self.save_file()
         return 200
 
@@ -84,7 +84,7 @@ class AuthService:
         except Exception as e:
             logger.error("保存账号失败: %s", e)
 
-    def read_ini(self, user_name="", password="", input_pwd=False, authorization=""):
+    def read_ini(self, user_name="", password="", _input_pwd=False, authorization=""):
         """从配置文件读取账号信息。"""
         try:
             account = ConfigManager.get_account(user_name) if user_name else {}

@@ -20,6 +20,7 @@ from .signals import (
     _DeleteSharesSignals,
     _DeviceListSignals,
     _DownloadLinkSignals,
+    _DownloadTrafficSignals,
     _FolderListSignals,
     _GenerateRapidSignals,
     _LoadListSignals,
@@ -388,6 +389,36 @@ class GetDownloadLinkTask(QRunnable):
             self.signals.finished.emit("", str(e))
 
 
+class CheckDownloadTrafficTask(QRunnable):
+    """后台检查所选文件的下载流量。"""
+
+    def __init__(self, pan, file_ids, signals: _DownloadTrafficSignals):
+        super().__init__()
+        self.pan = pan
+        self.file_ids = file_ids
+        self.signals = signals
+
+    def run(self):
+        try:
+            user_info = self.pan.get_user_info()
+            if (
+                user_info.code == 0
+                and user_info.data is not None
+                and getattr(user_info.data, "vip", False)
+            ):
+                self.signals.finished.emit({"unlimited": True}, "")
+                return
+
+            result = self.pan.check_download_traffic(self.file_ids)
+            if result.code == 0:
+                self.signals.finished.emit(result.data, "")
+            else:
+                self.signals.finished.emit(None, result.msg or "检查下载流量失败")
+        except Exception as e:
+            logger.error("检查下载流量失败: %s", e)
+            self.signals.finished.emit(None, str(e))
+
+
 class CreateShareTask(QRunnable):
     """后台创建分享链接。"""
 
@@ -464,7 +495,7 @@ class DeleteFileTask(QRunnable):
                 # 文件不在内存列表（列表按 save=False 加载，pan.list 常为空），
                 # 强制从服务器刷新后再查一次，避免本地缓存残留旧数据导致找不到
                 logger.debug("文件未在当前列表中找到，强制刷新目录")
-                code, files = self.pan.get_dir_by_id(
+                code, _ = self.pan.get_dir_by_id(
                     self.current_dir_id, save=True, all=True, limit=1000,
                     force_refresh=True,
                 )
@@ -646,7 +677,7 @@ class BatchDeleteTask(QRunnable):
             logger.info("批量删除文件: %s", names)
 
             # 先获取完整文件列表（强制刷新，避免本地缓存残留旧数据）
-            code, files = self.pan.get_dir_by_id(
+            code, _ = self.pan.get_dir_by_id(
                 self.current_dir_id, save=True, all=True, limit=1000,
                 force_refresh=True,
             )
@@ -750,7 +781,7 @@ class UploadFolderTask(QRunnable):
             raise RuntimeError("创建云端顶层文件夹失败")
 
         files = []
-        for dirpath, dirnames, filenames in _os.walk(root):
+        for dirpath, _dirnames, filenames in _os.walk(root):
             rel = _os.path.relpath(dirpath, root)
             parent_cloud_id = top_id
             if rel != ".":
@@ -763,7 +794,7 @@ class UploadFolderTask(QRunnable):
                 full = _Path(dirpath) / fname
                 if not full.is_file():
                     continue
-                files.append((str(full), parent_cloud_id))
+                files.append((full.as_posix(), parent_cloud_id))
         return files
 
     def _ensure_folder(self, name, parent_id):
@@ -850,8 +881,6 @@ class RapidTransferTask(QRunnable):
 
     def run(self):
         try:
-            total = len(self.files)
-
             def _on_progress(current, total_count):
                 self.signals.progress.emit(current, total_count)
 

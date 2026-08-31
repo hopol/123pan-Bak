@@ -16,6 +16,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 
 from .constants import (
+    api_url as build_api_url,
     BASE_URL,
     CLIENT_SIMULATION_DYNAMIC_HEADERS,
     CLIENT_SIMULATION_HEADERS,
@@ -45,7 +46,7 @@ class _ApiSession(requests.Session):
         super().__init__()
         self._use_fallback = False
 
-    def request(self, method, url, **kwargs):
+    def request(self, method, url, **kwargs):  # pylint: disable=arguments-differ
         parsed = urlparse(url)
         is_primary_api = parsed.netloc == self._PRIMARY_NETLOC and "/api/" in parsed.path
         if not is_primary_api:
@@ -119,6 +120,10 @@ class NetSession(FileSessionMixin, DownloadEngine):
     @property
     def user_info(self) -> Optional[UserInfoModel]:
         return self._user_info
+
+    def api_url(self, path, base_url=BASE_URL):
+        """根据相对路径和 API 域名构造完整地址。"""
+        return build_api_url(path, base_url)
 
     @property
     def authorization(self) -> str:

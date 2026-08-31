@@ -12,11 +12,39 @@ import base64
 import re
 from urllib.parse import urlparse, urlunparse
 
+import ipaddress
+
 import requests
+
+from ..common.log import get_logger
 
 # 预编译正则：解析 HTML body 中 href='...' 形式的下载链接
 # 避免每次调用 resolve_download_url 时重复编译
 HREF_URL_RE = re.compile(r"href='(https?://[^']+)'")
+
+
+def is_safe_download_url(url: str) -> bool:
+    """判断下载重定向是否为 HTTPS 公网地址。"""
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return False
+    if parsed.scheme != "https" or not parsed.hostname or parsed.username:
+        return False
+    hostname = parsed.hostname.lower().rstrip(".")
+    if hostname in {"localhost", "localhost.localdomain"}:
+        return False
+    try:
+        address = ipaddress.ip_address(hostname)
+    except ValueError:
+        return True
+    return not (
+        address.is_private
+        or address.is_loopback
+        or address.is_link_local
+        or address.is_reserved
+        or address.is_unspecified
+    )
 
 
 def b64_decode(data: str) -> str:
@@ -75,25 +103,23 @@ def rewrite_download_url(url: str) -> str:
                 qs["params"] = b64_encode(new_inner)
                 return urlunparse(parsed._replace(query=_dict_to_qs(qs)))
             return url
-        else:
-            # 非 web-pro 域名，重写为 web-pro2 代理
-            orig_parsed = urlparse(url)
-            orig_qs = _qs_to_dict(orig_parsed.query)
-            orig_qs["auto_redirect"] = "0"
-            rewritten_orig = urlunparse(
-                orig_parsed._replace(query=_dict_to_qs(orig_qs))
-            )
-            proxy_url = urlunparse((
-                "https",
-                "web-pro2.123952.com",
-                "/download-v2/",
-                "",
-                "params=" + b64_encode(rewritten_orig) + "&is_s3=0",
-                "",
-            ))
-            return proxy_url
+        # 非 web-pro 域名，重写为 web-pro2 代理
+        orig_parsed = urlparse(url)
+        orig_qs = _qs_to_dict(orig_parsed.query)
+        orig_qs["auto_redirect"] = "0"
+        rewritten_orig = urlunparse(
+            orig_parsed._replace(query=_dict_to_qs(orig_qs))
+        )
+        proxy_url = urlunparse((
+            "https",
+            "web-pro2.123952.com",
+            "/download-v2/",
+            "",
+            "params=" + b64_encode(rewritten_orig) + "&is_s3=0",
+            "",
+        ))
+        return proxy_url
     except Exception as e:
-        from ..common.log import get_logger
         get_logger(__name__).warning("下载 URL 重写失败，使用原始 URL: %s", e)
         return url
 
@@ -108,7 +134,6 @@ def resolve_download_url(transfer_session: requests.Session, url: str) -> str:
 
     对应 Flutter 中用 dart:io HttpClient 手动跟随重定向的逻辑。
     """
-    from ..common.log import get_logger
     logger = get_logger(__name__)
 
     try:
@@ -117,6 +142,9 @@ def resolve_download_url(transfer_session: requests.Session, url: str) -> str:
         # 1. 优先检查 HTTP 重定向 Location 头
         location = resp.headers.get("Location", "")
         if location and resp.status_code in (301, 302, 303, 307, 308):
+            if not is_safe_download_url(location):
+                logger.warning("拒绝非可信下载重定向: %s", location[:120])
+                return url
             logger.debug(
                 "下载 URL 已通过 Location 头解析 (status=%s): %s ...",
                 resp.status_code,
@@ -129,6 +157,9 @@ def resolve_download_url(transfer_session: requests.Session, url: str) -> str:
         match = HREF_URL_RE.search(text)
         if match:
             resolved = match.group(1)
+            if not is_safe_download_url(resolved):
+                logger.warning("拒绝非可信 HTML 下载链接: %s", resolved[:120])
+                return url
             logger.debug("下载 URL 已通过 href 解析: %s ...", resolved[:80])
             return resolved
 
@@ -142,7 +173,7 @@ def resolve_download_url(transfer_session: requests.Session, url: str) -> str:
 
     # 3. 兜底：如果是 download-v2 URL，直接解码 base64 params
     decoded = decode_download_v2_params(url)
-    if decoded:
+    if decoded and is_safe_download_url(decoded):
         logger.debug("下载 URL 已通过 base64 params 解码: %s ...", decoded[:80])
         return decoded
 

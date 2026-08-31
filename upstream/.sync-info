@@ -1,5 +1,5 @@
-commit=e70a6d2dd755fa60d978dff70c8932f1adc83acd
-timestamp=2026-08-25T02:22:17Z
+commit=3bf55f1c832e5f79f2d28c5e12db9ac120212bec
+timestamp=2026-08-31T08:16:39Z
 upstream_url=https://github.com/123panNextGen/123pan
 upstream_branch=fluent-dev
-source_ref=v4.0.1-18-ge70a6d2
+source_ref=v4.0.1-45-g3bf55f1
